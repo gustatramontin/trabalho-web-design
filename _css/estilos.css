@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Georgia;
+  font-size: 270%;
+  color: white;
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+}
+
+nav#menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(17, 17, 17);
+}
+
+nav#menu ul {
+  list-style: none;  
+  height: 55px;
+  width: 24%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+
+  margin:0 20px;
+}
+
+
+nav#menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(17, 17, 17);
+  font-size: 120%;
+  color: white;
+
+}
+
+nav#menu a {
+  display: flex;
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  height: 55px;
+  padding: 0 20px;
+}
+
+nav#menu a:hover {
+  background-color: white;
+  color: black;
+  padding: 0 20px;
+}
+
+
+main {
+  color: #222;
+  
+  font-family: Arial;
+  line-height: 1.6;
+  
+  background-color: white;
+  
+  max-width: 1100px;
+
+  margin: 0% 10%;
+  padding: 50px;
+}
+
+main section {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+main section .espec-intel {
+  display:flex ;
+  max-width: 1100px;
+  
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+main section#section-amd, section#home {
+  
+  align-items: center;
+  
+}
+
+main section .espec-intel img {
+  max-width: 700px;
+  max-height: 600px;
+}
+
+footer {
+  padding: 2%;
+  margin: 0 8%;
+  color: white;
+}
+
+.Ficha {
+  line-height: 1.2;
+}
+
+img.amd, .img-index {
+  width: 90%;
+  height: 90%;
+  max-width: 700px;
+  max-height: 600px;
+}

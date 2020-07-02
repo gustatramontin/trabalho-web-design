@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Questionário</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<h2>Questionário</h2>
+
+	<form>
+	<fieldset>
+		<br>
+		<legend>Por favor, responda ao questionário abaixo para ajudar na organização do site</legend>
+
+		<div>
+		<label>Qual dispositivo você mais utiliza?</label><br>
+			<input type="radio" name="dispositivo" value="Computador">Computador <br>
+			<input type="radio" name="dispositivo" value="Notebook">Notebook <br>
+			<input type="radio" name="dispositivo" value="Tablet">Tablet <br>
+			<input type="radio" name="dispositivo" value="Celular">Celular <br>
+		</div><br>
+
+		<div>
+		<label>Qual navegador você mais utiliza?</label><br>
+        <input list="navegadores" placeholder="Digite o navegador...">
+		<datalist id="navegadores">
+          <option value="Internet Explorer">Internet Explorer</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Chrome" selected="selected">Chrome</option>
+          <option value="Opera">Opera</option>
+          <option value="Safari">Safari</option>
+          <option value="Samsung Internet">Samsung Internet</option>
+          <option value="Bing">Bing</option>
+        </datalist>
+		</div><br>
+
+		<div>
+		<label>Qual o seu sistema operacional?</label><br>
+		<select>
+			<option value="Linux Ubuntu" selected="selected">Linux Ubuntu</option>
+			<option value="Microsoft Windows">Microsoft Windows</option>
+			<option value="Mac OS X">Mac OS X</option>
+			<option value="iOS">iOS</option>
+			<option value="Android">Android</option>
+			<option value="Windows Phone">Windows Phone</option>
+		</select>
+		</div><br>
+
+		<div>
+		<label>O que você gosta de fazer quando acessa a internet?</label><br>
+			<input type="checkbox" name="Interesses" value="Jogar">Jogar <br>
+			<input type="checkbox" name="Interesses" value="Estudar">Estudar <br>
+			<input type="checkbox" name="Interesses" value="Trabalhar">Trabalhar <br>
+			<input type="checkbox" name="Interesses" value="Redes sociais">Redes sociais <br>
+			<input type="checkbox" name="Interesses" value="Netflix">Netflix <br>
+			<input type="checkbox" name="Interesses" value="YouTube">YouTube <br>
+			<input type="checkbox" name="Interesses" value="Outro">Outro: <input type="text" size="10">
+		</div><br>
+
+		<div>
+		<label>Nos dê alguma sugestão do que podemos melhorar:</label><br>
+		<textarea name="sugestão" placeholder="Eu sugiro que..." cols="45" rows="5"></textarea>	
+		</div><br>
+
+		<div>
+			<label>Que cor você acha que combinaria com o site?</label><br>
+			<input type="color" name="favcor" value="#00ccff">
+		</div><br>
+		</fieldset><br>
+
+		<input type="submit" value="Enviar">
+    	<input type="reset" value="Limpar">
+	</form>
+</body>
+</html>

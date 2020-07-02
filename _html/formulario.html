@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../_css/estilos.css">
+  <link rel="stylesheet" href="../_css/estilosform.css">
+  <link rel="icon" type="imagem/png" href="../img/icone-32x32.png">
+  <title>Computadores - Cadastro</title>
+</head>
+
+<body>
+  <main>
+    <h2>Criação da Conta</h2>
+
+    <form action="index.html">
+      <fieldset>
+        <legend>Dados de Usuário</legend><br>
+        <label>Nome de Usuário: </label> <br>
+        <input type="text" size="40" required placeholder="Ex.joao.silva" autofocus> <br><br>
+        <label>Email: </label> <br>
+        <input type="email" size="40" required placeholder="Ex.joao.silva@gmail.com"> <br><br>
+        <label>Senha: </label> <br>
+        <input type="password" size="40" required><br><br>
+        <label>Repita a senha: </label> <br>
+        <input type="password" size="40" required><br><br>
+      </fieldset> <br>
+
+      <fieldset>
+        <legend>Dados Pessoais</legend><br>
+
+
+        <label>Nome Completo:</label> <br>
+        <input type="text" size="25" required placeholder="Ex.João da Silva"> <br><br>
+
+
+        <label>Idade:</label> <br>
+        <input type="number"> <br><br>
+
+
+        <label>CPF:</label> <br>
+        <input type="text" size="20" required placeholder="***.***.***-**"> <br><br>
+
+
+        <label>Registro Geral:</label> <br>
+        <input type="text" size="20" required placeholder="*.***.***"> <br><br>
+
+
+        <label>Número de telefone:</label> <br>
+        <input type="tel" size="20" required placeholder="(DDD) Número"> <br><br>
+
+
+        <label>CEP:</label> <br>
+        <input type="text" size="20" placeholder="********"> <br><br>
+
+
+        <label>Sexo: </label><br><b></b>
+        <input type="radio" name="sexo">Masculino
+        <input type="radio" name="sexo">Femenino<br><br>
+
+      </fieldset><br>
+
+      <h2>Responder Essa Parte é Opcional</h2>
+
+      <fieldset>
+        <br>
+        <legend>Questionário</legend>
+
+        <div>
+          <label>Qual dispositivo você mais utiliza?</label><br>
+          <input type="radio" name="dispositivo" value="Computador">PC <br>
+          <input type="radio" name="dispositivo" value="Notebook">Notebook <br>
+          <input type="radio" name="dispositivo" value="Tablet">Tablet <br>
+          <input type="radio" name="dispositivo" value="Celular">Celular <br>
+        </div><br>
+
+        <div>
+          <label>Qual navegador você mais utiliza?</label><br>
+          <input list="navegadores" placeholder="Digite o navegador...">
+          <datalist id="navegadores">
+            <option value="explorer">Internet Explorer</option>
+            <option value="firefox">Firefox</option>
+            <option value="chrome" selected="selected">Chrome</option>
+            <option value="opera">Opera</option>
+            <option value="safari">Safari</option>
+            <option value="edge"> Edge</option>
+            <option value="vivald">Vivlad</option>
+          </datalist>
+        </div><br>
+
+        <div>
+          <label>Qual o seu sistema operacional principal?</label><br>
+          <select>
+            <option value="linux" selected="selected">Uma Distro Linus</option>
+            <option value="window">Windows</option>
+            <option value="osx">Mac OS X</option>
+            <option value="ios">IOS</option>
+            <option value="Android">Android</option>
+          </select>
+        </div><br>
+
+        <div>
+          <label>O que você gosta de fazer quando acessa a internet?</label><br>
+          <input type="checkbox" name="interesses" value="jogar">Jogar <br>
+          <input type="checkbox" name="interesses" value="estudar">Estudar <br>
+          <input type="checkbox" name="interesses" value="trabalhar">Trabalhar <br>
+          <input type="checkbox" name="interesses" value="Redes sociais">Redes sociais <br>
+          <input type="checkbox" name="interesses" value="netflix">Netflix <br>
+          <input type="checkbox" name="interesses" value="YouTube">YouTube <br>
+          <input type="checkbox" name="interesses" value="outro">Outro: <input type="text" size="10">
+        </div><br>
+
+        <div>
+          <label>Nos dê alguma sugestão do que podemos melhorar:</label><br>
+          <textarea name="sugestão" placeholder="Eu sugiro que..." cols="45" rows="5"></textarea>
+        </div><br>
+
+        <div>
+          <label>Que cor você acha que combinaria com o site?</label><br>
+          <input type="color" name="favcor" value="#00ccff">
+        </div><br>
+      </fieldset><br>
+
+
+      <div class="form-group">
+        <input type="checkbox" required> <label>Aceito disponibilizar as informações pessoais acima para está
+          empresa.</label><br>
+      </div>
+
+      <div>
+        <input type="submit" value="Enviar" class="botao" onclick="analisar()">
+        <input type="reset" value="Limpar" class="botao">
+      </div>
+    </form>
+  </main>
+  <script src="../_js/scripts.js"></script>
+</body>
+
+</html>
