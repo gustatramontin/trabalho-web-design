@@ -24,3 +24,10 @@ main form .botao {
     padding: 20px;
     font-size: 1.2em;
 }
+
+main form .radioButton {
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
