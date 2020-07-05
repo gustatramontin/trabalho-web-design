@@ -9,10 +9,12 @@ main form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 fieldset {
     width: 100%;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -20,11 +22,19 @@ fieldset {
 
     section, form, main, body {
         background-color: white;
+        margin: 0 auto;
+        padding: 0;
     }
 
-    input {
+    fieldset {width: 90%; margin: auto;}
+
+    input, textarea {
         padding: 15px 0;
         width: 70%;
+        border-width: 2px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: rgb(51, 51, 51);
     }
 
 }

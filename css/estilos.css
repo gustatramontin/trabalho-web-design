@@ -88,6 +88,7 @@ main {
   
   background-color: white;
   
+  box-sizing: border-box;
   margin: 0% 10%;
   padding: 50px;
 }
