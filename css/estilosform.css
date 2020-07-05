@@ -15,7 +15,20 @@ fieldset {
     width: 100%;
     text-align: center;
 }
- 
+
+@media screen and (max-width: 800px) {
+
+    section, form, main, body {
+        background-color: white;
+    }
+
+    input {
+        padding: 15px 0;
+        width: 70%;
+    }
+
+}
+
 legend {
     margin: 0 auto;
 }
