@@ -18,59 +18,68 @@ h1 {
   font-weight: normal;
 }
 
-header {
+header, nav, nav ul, nav ul li, nav ul li a, section {
   display: flex;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
   flex-direction: column;
-  margin: 20px;
+  margin: 20px 0;
 
 }
 
-nav#menu {
-  display: flex;
+nav {
   justify-content: space-between;
   background-color: rgb(17, 17, 17);
+  padding: 0 10px;
 }
 
-nav#menu ul {
+nav ul {
   list-style: none;  
-  width: auto; /*24%*/
-  display: flex;
   justify-content: space-between;
-  flex-flow: row nowrap;
-
-  margin:0 20px;
 }
 
 
-nav#menu li {
-  display: flex;
+nav li {
   align-items: center;
-
   font-size: 120%;
   color: white;
 
 }
 
-nav#menu a {
-  display: flex;
+nav a {
   align-items: center;
   background-color: rgb(17, 17, 17);
   color: white;
-  height: 55px;
-  padding: 0 20px;
+  text-align: center;
+  padding: 14px 20px;
 }
 
-nav#menu a:hover {
+nav a:hover {
   background-color: white;
   color: black;
-  padding: 0 20px;
+  padding: 14px 20px;
 }
 
+@media screen and (max-width: 800px) {
+  nav, nav ul, nav a {
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0 ;
+  }
+
+  nav ul li#liwithoutlink {
+    display: none;
+  }
+
+
+}
 
 main {
   color: #222;
   
-  font-family: Arial;
   line-height: 1.6;
   
   background-color: white;
@@ -80,7 +89,6 @@ main {
 }
 
 main section {
-  display: flex;
   flex-direction: column;
   text-align: center;
 
