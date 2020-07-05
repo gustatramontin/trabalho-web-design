@@ -74,6 +74,9 @@ nav a:hover {
     display: none;
   }
 
+  header {
+    text-align: center;
+  }
 
 }
 
