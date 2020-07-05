@@ -24,6 +24,7 @@ fieldset {
         background-color: white;
         margin: 0 auto;
         padding: 0;
+        text-align: center;
     }
 
     fieldset {width: 90%; margin: auto;}
