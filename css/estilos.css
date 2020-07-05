@@ -16,6 +16,7 @@ h1 {
   font-size: 270%;
   color: white;
   font-weight: normal;
+  margin-bottom: 15px;
 }
 
 header, nav, nav ul, nav ul li, nav ul li a, section {
