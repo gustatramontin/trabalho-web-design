@@ -29,7 +29,7 @@ fieldset {
 
     fieldset {width: 90%; margin: auto;}
 
-    input, textarea {
+    input, select, textarea {
         padding: 15px 0;
         width: 70%;
         border-width: 2px;
@@ -38,6 +38,11 @@ fieldset {
         border-color: rgb(51, 51, 51);
     }
 
+    input[type="radio"], input[type="checkbox"] {
+
+        padding: 2px;
+        width: 25px;
+    }
 }
 
 legend {
