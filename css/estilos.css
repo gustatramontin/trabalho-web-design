@@ -119,6 +119,11 @@ img.amd, .img-index {
   max-height: 600px;
 }
 
+.voltar {
+  padding: 17px;
+  font-size: 1.2em;
+}
+
 @media screen and (max-width: 800px) {
   nav, nav ul, nav a {
     flex-flow: column wrap;
