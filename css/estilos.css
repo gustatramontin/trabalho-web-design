@@ -19,7 +19,12 @@ h1 {
   margin-bottom: 15px;
 }
 
-header, nav, nav ul, nav ul li, nav ul li a, section {
+header,
+nav,
+nav ul,
+nav ul li,
+nav ul li a,
+section {
   display: flex;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
@@ -38,7 +43,7 @@ nav {
 }
 
 nav ul {
-  list-style: none;  
+  list-style: none;
   justify-content: space-between;
 }
 
@@ -66,11 +71,11 @@ nav a:hover {
 
 main {
   color: #222;
-  
+
   line-height: 1.6;
-  
+
   background-color: white;
-  
+
   box-sizing: border-box;
   margin: 0% 10%;
   padding: 50px;
@@ -83,18 +88,19 @@ main section {
 }
 
 main section .espec-intel {
-  display:flex ;
-    
+  display: flex;
+
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
-  
+
 }
 
-main section#section-amd, section#home {
-  
+main section#section-amd,
+section#home {
+
   align-items: center;
-  
+
 }
 
 main section .espec-intel img {
@@ -112,7 +118,8 @@ footer {
   line-height: 1.2;
 }
 
-img.amd, .img-index {
+img.amd,
+.img-index {
   width: 90%;
   height: 90%;
   max-width: 700px;
@@ -125,10 +132,13 @@ img.amd, .img-index {
 }
 
 @media screen and (max-width: 800px) {
-  nav, nav ul, nav a {
+
+  nav,
+  nav ul,
+  nav a {
     flex-flow: column wrap;
     width: 100%;
-    margin: 0 ;
+    margin: 0;
   }
 
   nav ul li#liwithoutlink {
@@ -143,8 +153,14 @@ img.amd, .img-index {
     padding: 0;
     margin: 0;
   }
+
   .espec-intel {
     flex-flow: column wrap !important;
-  }  
+  }
 
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
 }
