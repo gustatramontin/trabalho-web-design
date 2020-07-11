@@ -24,9 +24,9 @@
         <label>Email: </label> <br>
         <input type="email" size="40" required placeholder="Ex.joao.silva@gmail.com"> <br><br>
         <label>Senha: </label> <br>
-        <input type="password" size="40" required><br><br>
+        <input type="password" size="40" required maxlength="16"><br><br>
         <label>Repita a senha: </label> <br>
-        <input type="password" size="40" required><br><br>
+        <input type="password" size="40" required maxlength="16"><br><br>
       </fieldset> <br>
 
       <fieldset>
@@ -38,7 +38,7 @@
 
 
         <label>Idade:</label> <br>
-        <input type="number" maxlength="3"> <br><br>
+        <input type="number"> <br><br>
 
 
         <label>CPF:</label> <br>
@@ -66,8 +66,8 @@
       <h2>Responder Essa Parte é Opcional</h2>
 
       <fieldset>
-        <br>
-        <legend>Questionário</legend>
+        
+        <legend>Questionário</legend><br>
 
         <div class="radioButton">
           <label>Qual dispositivo você mais utiliza?</label><br>
@@ -137,7 +137,7 @@
         <input type="reset" value="Limpar" class="botao">
       </div>
     </form>
-    <button class="voltar" onclick="voltar()">&#11013 Voltar</button>
+    <button class="voltar" onclick="voltar()">&#11013; Voltar</button>
   </main>
 
   <script src="../js/scripts.js"></script>
