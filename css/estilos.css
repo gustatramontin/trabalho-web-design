@@ -196,13 +196,9 @@ img.amd,
     margin: 0;
   }
 
-  .contato {
-    margin: 0;
-  }
-
   .emails {
     flex-flow: column wrap;
-    justify-content: center;
+    align-items: center;
   }
 
   .emails a {
@@ -211,6 +207,10 @@ img.amd,
 
   .espec-intel {
     flex-flow: column wrap !important;
+  }
+
+  td, th {
+    padding: 0 !important;
   }
 
 }
