@@ -196,8 +196,13 @@ img.amd,
     margin: 0;
   }
 
+  .contato {
+    margin: 0;
+  }
+
   .emails {
     flex-flow: column wrap;
+    justify-content: center;
   }
 
   .emails a {
