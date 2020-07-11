@@ -142,7 +142,7 @@ footer div.contato a:hover {
 
 .emails {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 .emails a {
