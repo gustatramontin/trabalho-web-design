@@ -112,7 +112,49 @@ footer {
   padding: 2%;
   margin: 0 8%;
   color: white;
+  font-size: large;
 }
+
+footer div.contato{
+  margin: 15px 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+
+footer div.contato a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#emailtitle {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+footer div.contato a:hover {
+  text-decoration: underline;
+}
+
+.emails {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.emails a {
+  margin: 0 15px;
+}
+
+footer div.contato img {
+    width: 30px;
+    height: 30px;
+}
+
+footer h5 {font-size: 1.3em;}
 
 .Ficha {
   line-height: 1.2;
@@ -152,6 +194,14 @@ img.amd,
   main {
     padding: 0;
     margin: 0;
+  }
+
+  .emails {
+    flex-flow: column wrap;
+  }
+
+  .emails a {
+    padding: 7px;
   }
 
   .espec-intel {
