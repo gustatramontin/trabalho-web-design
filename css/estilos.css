@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +14,7 @@ a {
 }
 
 h1 {
-  font-family: Georgia;
+  font-family: 'Lora', serif;
   font-size: 270%;
   color: white;
   font-weight: normal;
@@ -113,6 +115,7 @@ footer {
   margin: 0 8%;
   color: white;
   font-size: large;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer div.contato{
@@ -152,6 +155,7 @@ footer div.contato a:hover {
 footer div.contato img {
     width: 30px;
     height: 30px;
+    margin: 0 7px;
 }
 
 footer h5 {font-size: 1.3em;}
